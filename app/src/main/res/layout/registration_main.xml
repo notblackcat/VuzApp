@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColour"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@mipmap/ic_vusedu_logo_foreground" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/round_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:letterSpacing="-0.03"
+            android:text="Запрос пароля"
+            android:textAlignment="center"
+            android:textColor="@color/authorColour"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="47dp"
+            android:letterSpacing="-0.03"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textColor="#13497B"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/RegistrationInput"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="3dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxCornerRadiusBottomEnd="10dp"
+            app:boxCornerRadiusBottomStart="10dp"
+            app:boxCornerRadiusTopEnd="10dp"
+            app:boxCornerRadiusTopStart="10dp"
+            app:boxStrokeWidth="0.5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="-0.03" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/check_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="-0.03"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:button="@drawable/checkbox_vuzapp"
+            android:checked="false"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:text="Согласен(-на) на обработку персональных данных"
+            android:textColor="#717377"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/check_notification"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:letterSpacing="-0.03"
+            android:button="@drawable/checkbox_vuzapp"
+            android:checked="false"
+            android:buttonTint="@color/colorPrimaryDark"
+            android:text="Получать уведомления об акциях"
+            android:textColor="#717377"
+            android:textSize="12sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registrationButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:letterSpacing="-0.03"
+            android:paddingVertical="10dp"
+            android:text="ЗАРЕГИСТРИРОВАТЬСЯ"
+            android:textSize="14dp"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:cornerRadius="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/loginn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="72dp"
+            android:letterSpacing="-0.03"
+            android:text="Есть аккаунт?"
+            android:textAlignment="center"
+            android:textColor="@color/authorColour"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</LinearLayout>

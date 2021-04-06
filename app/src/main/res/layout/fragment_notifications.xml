@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutColour"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/rubik_bold"
+        android:letterSpacing="-0.03"
+        android:text="Сообщения"
+        android:textAlignment="center"
+        android:textColor="@color/authorColour"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E9ECEE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="9dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/paidButton"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="22dp"
+            android:gravity="center"
+            android:letterSpacing="-0.03"
+            android:paddingVertical="3dp"
+            android:text="Непрочитанные"
+            android:textSize="12sp"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:cornerRadius="5dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/waitingpayButton"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="6dp"
+            android:gravity="center"
+            android:letterSpacing="-0.03"
+            android:paddingVertical="3dp"
+            android:text="Прочитанные"
+            android:textSize="12sp"
+            app:backgroundTint="@color/layoutNotColour"
+            app:cornerRadius="5dp" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/notification_layout_item"
+        />
+</LinearLayout>
