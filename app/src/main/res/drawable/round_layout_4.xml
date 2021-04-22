@@ -4,10 +4,10 @@
     <item>
         <shape>
             <solid android:color="#FFFFFF"/>
-            <corners android:topLeftRadius="48dp"
-                android:topRightRadius="48dp"
-                android:bottomLeftRadius="48dp"
-                android:bottomRightRadius="48dp"/>
+            <corners android:topLeftRadius="20dp"
+                android:topRightRadius="20dp"
+                android:bottomLeftRadius="20dp"
+                android:bottomRightRadius="20dp"/>
         </shape>
     </item>
 </selector>
